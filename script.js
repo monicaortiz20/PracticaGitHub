@@ -6,9 +6,11 @@ const submit = document.getElementById('submit')
 
 let arrUsers = []
 
+let regexMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+let regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/
 
 submit.addEventListener('submit', () => {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputEmail) && /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(inputPassword)) {
+    if (regexMail.test(inputEmail) && regexPassword.test(inputPassword)) {
         arrUsers.push(dataUser =
         {
             user: inputEmail,
