@@ -6,6 +6,10 @@ const submit = document.getElementById('submit')
 
 let arrUsers = []
 
+let variableChunga = 34
+let variableGhetto = 2
+let vaAPetar = "sí o sí"
+
 let regexMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 let regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/
 
