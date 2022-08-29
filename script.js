@@ -6,6 +6,8 @@ const submit = document.getElementById('submit')
 
 let arrUsers = []
 
+let variable = "jejeje"
+
 let regexMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 let regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/
 
